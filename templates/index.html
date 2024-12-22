@@ -7,16 +7,16 @@
   
   
   <div class="container my-3">
-    <h2>Add a Todo</h2>
+    <h2>Add a Task</h2>
 
     <form action="/" method="POST">
       <div class="mb-3">
-        <label for="title" class="form-label">Todo Title</label>
+        <label for="title" class="form-label">Task Title</label>
         <input type="text" class="form-control" name="title"id="title" aria-describedby="emailHelp">
         
       </div>
       <div class="mb-3">
-        <label for="desc" class="form-label">Todo Description</label>
+        <label for="desc" class="form-label">Task Description</label>
         <input type="text" class="form-control" name="desc" id="desc">
       </div>
       
@@ -24,11 +24,11 @@
     </form>
 </div>
 <div class ="container my-3">
-  <h2>Your Todo</h2>
+  <h2>Your Tasks</h2>
   
   {% if  allTodo|length==0 %}
   <div class="alert alert-dark" role="alert">
-    No todos Found.please add your first todo
+    No tasks Found.please add your first task
   </div>
 
 
